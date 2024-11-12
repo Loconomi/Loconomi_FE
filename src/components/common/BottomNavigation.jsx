@@ -8,11 +8,11 @@ const BottomNavigation = () => {
         <NavText>홈</NavText>
       </NavItem>
       <NavItem>
-        <IconImage src="/svg/burger.svg" alt="Market" />
+        <IconImage src="/svg/Basket.svg" alt="Restaurant" />
         <NavText>농담마켓</NavText>
       </NavItem>
       <NavItem>
-        <IconImage src="/svg/Basket.svg" alt="Restaurant" />
+        <IconImage src="/svg/burger.svg" alt="Market" />
         <NavText>농담식당</NavText>
       </NavItem>
     </NavigationContainer>
