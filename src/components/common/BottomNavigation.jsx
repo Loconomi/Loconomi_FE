@@ -23,13 +23,15 @@ export default BottomNavigation;
 
 const NavigationContainer = styled.div`
     display: flex;
-    justify-content: space-around; /* 모든 아이템을 동일한 간격으로 배치 */
-    align-items: center;
+    justify-content: space-around; 
+    position: fixed;
     bottom: 0;
+    align-items: center;
     width: 100%;
-    max-width: 530px;
-    padding: 10px 0;
+    max-width: 390px;
+    height: 60px;
     background-color: white;
+    padding: 10px 0;
     border-top: none;
 `;
 
@@ -38,22 +40,18 @@ const NavItem = styled.div`
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 5px;
-    flex: 1; /* 각 아이템이 균등한 너비를 차지하도록 설정 */
-    
+    gap: 3px;
 `;
 
 const IconImage = styled.img`
-    width: 24px;
-    height: 24px;
+    width: 35px;
+    height: 35px;
     cursor: pointer;
-
 `;
 
 const NavText = styled.p`
-    font-size: 12px;
-    color: #333; /* 텍스트 색상을 명확히 지정 */
+    font-size: 13px;
+    color: #333; 
     margin: 0;
     cursor: pointer;
-
 `;

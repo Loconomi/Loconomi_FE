@@ -1,5 +1,5 @@
 const sizes = {
-  maxWidth: '375px',
+  maxWidth: '480px',
 };
 
 // 색상, 폰트는 우리 서비스에 따라 바꿀 예정
