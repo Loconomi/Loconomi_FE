@@ -49,7 +49,6 @@ const NavItem = styled(Link)`
     align-items: center;
     text-align: center;
     gap: 3px;
-    //padding-bottom: 20px;
     text-decoration: none;
     color: ${({ $isActive }) => ($isActive ? '#FFA500' : '#333')}; 
 `;

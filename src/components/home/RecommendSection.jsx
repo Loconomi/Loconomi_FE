@@ -1,4 +1,3 @@
-// RecommendSection.jsx
 import React from 'react';
 import styled from 'styled-components';
 import RecommendItem from './RecommendItem.jsx';
@@ -61,7 +60,7 @@ const ItemList = styled.div`
     display: flex;
     flex-direction: row;
     gap: 20px;
-    padding: 10px 0;
+    padding: 10px 5px;
     margin-top: 10px;
     overflow-x: auto; /* 가로 스크롤 활성화 */
     -webkit-overflow-scrolling: touch; /* iOS에서 부드러운 스크롤 */
