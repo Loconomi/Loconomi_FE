@@ -50,7 +50,7 @@ const NavItem = styled(Link)`
     text-align: center;
     gap: 3px;
     text-decoration: none;
-    color: ${({ $isActive }) => ($isActive ? '#FFA500' : '#333')}; 
+    color: ${({ $isActive }) => ($isActive ? '#FFA500' : '#333')};
 `;
 
 const Icon = styled.img`

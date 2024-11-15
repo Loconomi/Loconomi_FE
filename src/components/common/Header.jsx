@@ -32,8 +32,6 @@ const ButtonContainer = styled.button`
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 30px;
-    height: 30px;
     background: none;
     border: none;
     cursor: pointer;
@@ -43,8 +41,8 @@ const ButtonContainer = styled.button`
         opacity: 0.8;
     }
     img {
-        width: 20px;
-        height: 20px;
+        width: 100%;
+        height: 100%;
         object-fit: contain;
         cursor: pointer;
     }

@@ -10,6 +10,7 @@ import home1_1 from '../../assets/image/home/home_1_1.svg';
 import home2_2 from '../../assets/image/home/home_2_2.svg';
 import home3_3 from '../../assets/image/home/home_3_3.svg';
 import home4_4 from '../../assets/image/home/home_4_4.svg';
+import home5_5 from '../../assets/image/home/home_5_5.svg';
 
 const RecommendSection = ({ title, type }) => {
   const recommendedItems = [
@@ -24,6 +25,7 @@ const RecommendSection = ({ title, type }) => {
     { title: '색이 변했어요', icon: home2_2, path: '/color-changed' },
     { title: '울퉁불퉁해요', icon: home3_3, path: '/bumpy' },
     { title: '상처났어요', icon: home4_4, path: '/bruised' },
+    { title: '모양이 달라요', icon: home5_5, path: '/different-shape' },
   ];
 
   const items = type === 'recommended' ? recommendedItems : rejectedItems;
