@@ -44,11 +44,11 @@ const HeaderContainer = styled.div`
     align-items: center;
     justify-content: space-between;
     padding: 0 1rem;
+    z-index: 10;
     width: 100%;
     max-width: 390px;
     height: 50px;
     background-color: ${({ theme }) => theme.colors.white || '#ffffff'};
-    border-bottom: 1px solid #e0e0e0;
 `;
 
 const ButtonContainer = styled.button`
