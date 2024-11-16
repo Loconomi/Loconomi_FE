@@ -11,7 +11,7 @@ import SweetPotato from "../../assets/image/sales/sweetPotato.svg";
 
 
 const products = [
-  { id: 1, name: '율통불통 해남 고구마', weight: '1kg~20kg', price: '3,000원~', image: SweetPotato },
+  { id: 1, name: '울퉁불퉁 해남 고구마', weight: '1kg~20kg', price: '3,000원~', image: SweetPotato },
   { id: 2, name: '여기저기 찍힌 진영 단감', weight: '1kg~10kg', price: '13,000원~', image: Persimmon },
   { id: 3, name: '점박힌 창녕 깐마늘', weight: '5kg', price: '11,000원~', image: Garlic },
 ];
