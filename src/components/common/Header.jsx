@@ -20,21 +20,21 @@ export default Header;
 const HeaderContainer = styled.div`
     position: fixed;
     display: flex;
+    position: fixed;
+    top: 0;
     align-items: center;
     padding: 0 1rem;
+    z-index: 10;
     width: 100%;
     max-width: 390px;
     height: 50px; /* 필요에 따라 높이 조정 */
     background-color: ${({ theme }) => theme.colors.white || '#ffffff'};
-    border-bottom: 1px solid #e0e0e0;
 `;
 
 const ButtonContainer = styled.button`
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 30px;
-    height: 30px;
     background: none;
     border: none;
     cursor: pointer;
@@ -44,8 +44,8 @@ const ButtonContainer = styled.button`
         opacity: 0.8;
     }
     img {
-        width: 20px;
-        height: 20px;
+        width: 100%;
+        height: 100%;
         object-fit: contain;
         cursor: pointer;
     }
