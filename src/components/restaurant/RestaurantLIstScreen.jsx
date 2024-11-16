@@ -4,27 +4,11 @@ import Map from '../../apis/kakao/Map.jsx';
 import LocationSection from './LocationSection.jsx';
 import RestaurantList from './RestaurantList.jsx';
 import CustomTabs from '../common/CustomTabs.jsx'; // 분리된 컴포넌트 import
+import restaurants  from '../../constants/restaurants.js';
+
 
 const RestaurantsListScreen = () => {
   const [activeTab, setActiveTab] = useState(0);
-
-  const restaurants = [
-    {
-      image: 'https://via.placeholder.com/120',
-      name: '모먼트',
-      tags: ['서울시 강남구', '무안 양파', '양파잼'],
-    },
-    {
-      image: 'https://via.placeholder.com/120',
-      name: '온기',
-      tags: ['성남시 분당구', '진영 단감', '감 타르트'],
-    },
-    {
-      image: 'https://via.placeholder.com/120',
-      name: '온기',
-      tags: ['성남시 분당구', '진영 단감', '감 타르트'],
-    },
-  ];
 
   const handleChange = (event, newValue) => {
     setActiveTab(newValue);

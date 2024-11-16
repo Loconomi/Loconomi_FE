@@ -15,7 +15,6 @@ const CustomTabs = ({ activeTab, onChange }) => {
 
 export default CustomTabs;
 
-// 스타일링
 const CustomBox = styled(Box)`
     position: fixed; /* 화면에 고정 */
     top: 50px;

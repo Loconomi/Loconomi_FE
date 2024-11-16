@@ -21,7 +21,7 @@ const LocationContainer = styled.div`
     gap: 10px;
     padding: 10px;
     position: fixed;
-    top: 100px;
+    top: 98px;
     z-index: 10;
     background-color: white;
     width: 390px;
