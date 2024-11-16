@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { useNavigate } from 'react-router-dom';
-import BackButton from'../../assets/image/Expand_left_light.png';
+import BackButton from'../../assets/image/backButton.svg';
 
 const Header = ({ title }) => {
   const navigate = useNavigate();
@@ -23,7 +23,7 @@ const HeaderContainer = styled.div`
     padding: 0 1rem;
     width: 100%;
     max-width: 390px;
-    height: 60px; /* 필요에 따라 높이 조정 */
+    height: 50px; /* 필요에 따라 높이 조정 */
     background-color: ${({ theme }) => theme.colors.white || '#ffffff'};
     border-bottom: 1px solid #e0e0e0;
 `;
@@ -32,8 +32,6 @@ const ButtonContainer = styled.button`
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
     background: none;
     border: none;
     cursor: pointer;

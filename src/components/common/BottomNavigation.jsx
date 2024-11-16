@@ -1,19 +1,28 @@
 import styled from 'styled-components';
+import { useLocation, Link } from 'react-router-dom';
+import HomeIcon from '../../assets/image/home/Home.svg';
+import HomeIconActive from '../../assets/image/home/Home_active.svg';
+import MarketIcon from '../../assets/image/Basket.svg';
+import MarketIconActive from '../../assets/image/Basket_active.svg';
+import RestaurantIcon from '../../assets/image/burger.svg';
+import RestaurantIconActive from '../../assets/image/burger_active.svg';
 
 const BottomNavigation = () => {
+  const location = useLocation();
+
   return (
     <NavigationContainer>
-      <NavItem>
-        <IconImage src="/svg/Home.svg" alt="Home" />
-        <NavText>홈</NavText>
+      <NavItem to="/home" $isActive={location.pathname === '/home'}>
+        <Icon src={location.pathname === '/home' ? HomeIconActive : HomeIcon} alt="Home" />
+        <NavText $isActive={location.pathname === '/home'}>홈</NavText>
       </NavItem>
-      <NavItem>
-        <IconImage src="/svg/Basket.svg" alt="Restaurant" />
-        <NavText>농담마켓</NavText>
+      <NavItem to="/sales" $isActive={location.pathname === '/sales'}>
+        <Icon src={location.pathname === '/sales' ? MarketIconActive : MarketIcon} alt="Market" />
+        <NavText $isActive={location.pathname === '/sales'}>농담마켓</NavText>
       </NavItem>
-      <NavItem>
-        <IconImage src="/svg/burger.svg" alt="Market" />
-        <NavText>농담식당</NavText>
+      <NavItem to="/restaurants" $isActive={location.pathname === '/restaurants'}>
+        <Icon src={location.pathname === '/restaurants' ? RestaurantIconActive : RestaurantIcon} alt="Restaurant" />
+        <NavText $isActive={location.pathname === '/restaurants'}>농담식당</NavText>
       </NavItem>
     </NavigationContainer>
   );
@@ -23,27 +32,28 @@ export default BottomNavigation;
 
 const NavigationContainer = styled.div`
     display: flex;
-    justify-content: space-around; 
+    justify-content: space-around;
     position: fixed;
     bottom: 0;
     align-items: center;
     width: 100%;
     max-width: 390px;
-    height: 60px;
+    height: 100px;
     background-color: white;
-    padding: 10px 0;
     border-top: none;
 `;
 
-const NavItem = styled.div`
+const NavItem = styled(Link)`
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     gap: 3px;
+    text-decoration: none;
+    color: ${({ $isActive }) => ($isActive ? '#FFA500' : '#333')};
 `;
 
-const IconImage = styled.img`
+const Icon = styled.img`
     width: 35px;
     height: 35px;
     cursor: pointer;
@@ -51,7 +61,8 @@ const IconImage = styled.img`
 
 const NavText = styled.p`
     font-size: 13px;
-    color: #333; 
+    font-family: 'Noto Sans KR', sans-serif;
+    color: ${({ $isActive }) => ($isActive ? '#FFA500' : '#333')};
     margin: 0;
     cursor: pointer;
 `;
