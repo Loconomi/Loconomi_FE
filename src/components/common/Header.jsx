@@ -18,6 +18,7 @@ const Header = ({ title }) => {
 export default Header;
 
 const HeaderContainer = styled.div`
+    position: fixed;
     display: flex;
     align-items: center;
     padding: 0 1rem;
