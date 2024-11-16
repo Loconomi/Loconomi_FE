@@ -35,6 +35,7 @@ const NavigationContainer = styled.div`
     justify-content: space-around;
     position: fixed;
     bottom: 0;
+    z-index: 10; /* 네비게이션을 맨 위로 표시 */
     align-items: center;
     width: 100%;
     max-width: 390px;

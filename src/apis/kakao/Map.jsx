@@ -10,7 +10,7 @@ const Map = () => {
 
     // 지도를 생성할 때 필요한 기본 옵션
     const options = {
-      center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표.
+      center: new kakao.maps.LatLng(37.3517102, 127.0705293), // 지도의 중심좌표.
       level: 3, //
     };
 
@@ -29,5 +29,5 @@ export default Map;
 const MapContainer = styled.div`
     width: 390px;
     max-width: 390px;
-    height: 566px;
+    height: 100%;
 `;
