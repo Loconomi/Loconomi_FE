@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { useLocation, Link } from 'react-router-dom';
-import HomeIcon from '../../assets/image/Home.svg';
-import HomeIconActive from '../../assets/image/Home_active.svg';
+import HomeIcon from '../../assets/image/home/Home.svg';
+import HomeIconActive from '../../assets/image/home/Home_active.svg';
 import MarketIcon from '../../assets/image/Basket.svg';
 import MarketIconActive from '../../assets/image/Basket_active.svg';
 import RestaurantIcon from '../../assets/image/burger.svg';
@@ -49,9 +49,8 @@ const NavItem = styled(Link)`
     align-items: center;
     text-align: center;
     gap: 3px;
-    //padding-bottom: 20px;
     text-decoration: none;
-    color: ${({ $isActive }) => ($isActive ? '#FFA500' : '#333')}; 
+    color: ${({ $isActive }) => ($isActive ? '#FFA500' : '#333')};
 `;
 
 const Icon = styled.img`

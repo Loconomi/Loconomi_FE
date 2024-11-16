@@ -24,7 +24,7 @@ const NavigationContainer = styled.div`
     align-items: center;
     width: 100%;
     max-width: 390px;
-    height: 60px;
+    height: 100px;
     background-color: white;
     padding: 10px 0;
     border-top: 1px solid #e0e0e0;
@@ -36,35 +36,31 @@ const NavItem = styled.div`
     align-items: center;
     text-align: center;
     gap: 3px;
-    
-    
 `;
 
 const ButtonSection = styled.div`
     display: flex;
-    flex-direction: column;
     align-items: center;
     text-align: center;
     justify-content: center;
-    gap: 3px;
     background-color: ${({ theme }) => theme.colors.main};
-    width: 70%;
-    height: 90%;
-    border-radius: 10px;
+    width: 295px;
+    height: 38px;
+    border-radius: 8px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
-    
 `;
 
 const IconImage = styled.img`
-    width: 31px;
-    height: 41px;
+    width: 100%;
+    height: 100%;
     cursor: pointer;
 `;
 
 const NavText = styled.p`
-    font-size: 17px;
-    color: #FFFFFF; 
-    margin: 0;
+    font-size: 16px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    color: white;
     cursor: pointer;
     text-align: center;
     justify-content: center;
