@@ -24,7 +24,7 @@ const LocationContainer = styled.div`
     top: 98px;
     z-index: 10;
     background-color: white;
-    width: 390px;
+    width: 100%;
     max-width: 480px;
 `;
 

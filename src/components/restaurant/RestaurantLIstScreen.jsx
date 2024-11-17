@@ -45,7 +45,7 @@ const ScreenContainer = styled.div`
 
 const MapContainer = styled.div`
     width: 100%;
-    max-width: 390px;
+    max-width: 480px;
     height: calc(100vh - 100px); /* 전체 뷰 높이에서 네비게이션 높이를 제외 */
 `;
 

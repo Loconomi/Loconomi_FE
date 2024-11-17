@@ -20,13 +20,12 @@ export default Header;
 const HeaderContainer = styled.div`
     position: fixed;
     display: flex;
-    position: fixed;
     top: 0;
     align-items: center;
     padding: 0 1rem;
     z-index: 10;
     width: 100%;
-    max-width: 390px;
+    max-width: 480px;
     height: 50px; /* 필요에 따라 높이 조정 */
     background-color: ${({ theme }) => theme.colors.white || '#ffffff'};
 `;

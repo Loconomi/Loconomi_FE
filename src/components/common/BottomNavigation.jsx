@@ -38,7 +38,7 @@ const NavigationContainer = styled.div`
     z-index: 10; /* 네비게이션을 맨 위로 표시 */
     align-items: center;
     width: 100%;
-    max-width: 390px;
+    max-width: 480px;
     height: 100px;
     background-color: white;
     border-top: none;

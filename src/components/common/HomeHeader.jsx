@@ -46,7 +46,7 @@ const HeaderContainer = styled.div`
     padding: 0 1rem;
     z-index: 10;
     width: 100%;
-    max-width: 390px;
+    max-width: 480px;
     height: 50px;
     background-color: ${({ theme }) => theme.colors.white || '#ffffff'};
 `;

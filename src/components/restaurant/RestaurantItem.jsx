@@ -30,7 +30,8 @@ const RestaurantItemContainer = styled.div`
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     margin: 16px 0;
-    width: 350px;
+    width: 100%;
+    max-width: 480px;
     height: 274px;
 `;
 

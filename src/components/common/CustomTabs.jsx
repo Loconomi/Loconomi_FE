@@ -18,7 +18,7 @@ export default CustomTabs;
 const CustomBox = styled(Box)`
     position: fixed; /* 화면에 고정 */
     top: 50px;
-    width: 390px;
+    width: 100%;
     max-width: 480px;
     z-index: 10;
     background-color: white;
