@@ -1,7 +1,10 @@
+import SalesListScreen from '../../components/sale/SalesListScreen';
+
+
 const SalesListPage = () => {
   return (
     <div>
-      <h1>판매 리스트 페이지</h1>
+        <SalesListScreen />
     </div>
   );
 }
