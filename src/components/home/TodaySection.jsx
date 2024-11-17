@@ -31,7 +31,7 @@ export default TodaySection;
 
 const TodaySectionContainer = styled.div`
     width: 100%;
-    max-width: 390px; /* 전체 컨테이너의 최대 너비 */
+    max-width: 480px; /* 전체 컨테이너의 최대 너비 */
     margin-top: 10px;
 `;
 
@@ -66,8 +66,6 @@ const TodayMenuCard = styled.div`
     margin-top: 16px;
     width: 100%;
     height: 180px;
-    max-width: 350px; 
-    aspect-ratio: 350 / 180; /* 350px x 180px 비율 유지 */
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 `;
 

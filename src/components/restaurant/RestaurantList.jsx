@@ -23,6 +23,8 @@ const ListContainer = styled.div`
   display: flex;
   flex-direction: column;
   height: auto;
+    width: 100%;
+    max-width: 480px;
   gap: 16px;
   padding: 16px;
 `;

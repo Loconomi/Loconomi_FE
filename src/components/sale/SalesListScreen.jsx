@@ -65,7 +65,7 @@ export default SalesListPage;
 
 const Container = styled.div`
   width: 100%;
-  max-width: 390px;
+  max-width: 480px;
   margin: 0 auto;
   padding: 1.3rem;
   background-color: ${({ theme }) => theme.colors.white};

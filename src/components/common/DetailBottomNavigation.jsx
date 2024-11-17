@@ -23,7 +23,7 @@ const NavigationContainer = styled.div`
     bottom: 0;
     align-items: center;
     width: 100%;
-    max-width: 390px;
+    max-width: 480px;
     height: 100px;
     background-color: white;
     padding: 10px 0;

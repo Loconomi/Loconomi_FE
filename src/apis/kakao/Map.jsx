@@ -62,8 +62,7 @@ export default Map;
 
 const MapContainer = styled.div`
     width: 100%;
-    //height: 100%;
-    max-width: 390px;
+    max-width: 480px;
     height: calc(100vh - 100px);
 `;
 

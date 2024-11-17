@@ -48,7 +48,7 @@ export default RecommendSection;
 
 const RecommendSectionContainer = styled.div`
     width: 100%;
-    max-width: 390px;
+    max-width: 480px;
     margin-top: 35px;
 `;
 

@@ -28,7 +28,6 @@ const HomeScreenContainer = styled.div`
 
 const ImageSection = styled.div`
     width: 100%;
-    max-width: 768px; // 모바일 화면에 맞춘 최대 너비 설정
     padding-top: 50px; // 헤더를 position: fix로 해둬서 padding을 50만큼 줘야 함
 `;
 
