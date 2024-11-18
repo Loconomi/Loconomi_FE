@@ -213,7 +213,7 @@ const Input = styled.input`
 `;
 
 const SubmitButton = styled.button`
-  width: 100%;
+  width: 21.769rem;
   padding: 0.95rem;
   font-size: 1rem;
   color: ${({ theme }) => theme.colors.white};

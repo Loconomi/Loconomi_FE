@@ -1,12 +1,47 @@
 import styled from 'styled-components';
 import loginLogo from '../../assets/image/login/loginLogo.svg';
 import kakaoButton from '../../assets/image/login/kakaoButton.svg';
+import { useEffect } from 'react';
+import { useHistory } from 'react-router-dom';
+import axios from 'axios'
 
 export default function LoginPage() {
+  // 카카오 로그인 요청을 보낼 함수
+  const handleKakaoLogin = () => {
+    const REST_API_KEY = import.meta.env.VITE_KAKAO_API_KEY;
+    const REDIRECT_URI = import.meta.env.VITE_KAKAO_REDIRECT_URI;
+    window.location.href = `https://kauth.kakao.com/oauth/authorize?client_id=${REST_API_KEY}&redirect_uri=${REDIRECT_URI}&response_type=code`;
+  };
+  
+
+  const history = useHistory();
+
+  useEffect(() => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const code = urlParams.get('code');
+
+    if (code) {
+      axios.post('https://{YOUR_BACKEND_DOMAIN}/api/kakao/token', { code })
+        .then(response => {
+          const { accessToken, refreshToken } = response.data;
+          localStorage.setItem('accessToken', accessToken);
+          localStorage.setItem('refreshToken', refreshToken);
+
+          console.log('로그인 성공:', response.data);
+
+          // 로그인 후 홈 페이지로 이동
+          history.push('/home');
+        })
+        .catch(error => {
+          console.error('로그인 오류:', error);
+        });
+    }
+  }, [history]);
+  
   return (
     <LoginContainer>
       <img src={loginLogo} alt="Login Logo" />
-      <KakaoButton src={kakaoButton} alt="kakao Button" />
+      <KakaoButton src={kakaoButton} alt="kakao Button" onClick={handleKakaoLogin} />
     </LoginContainer>
   );
 }
