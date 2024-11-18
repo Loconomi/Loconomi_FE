@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
+import { useNavigate, useParams } from 'react-router-dom';
 
 
-const RestaurantItem = ({ image, name, tags }) => {
+const RestaurantItem = ({ id, image, name, tags }) => {
+  const nav = useNavigate();
   return (
-    <RestaurantItemContainer>
+    <RestaurantItemContainer onClick={() => {nav(`/details/restaurant/${id}`);}} >
       <ImageContainer>
         <Image src={image} alt={name} />
       </ImageContainer>
@@ -64,10 +66,10 @@ const Tags = styled.div`
 `;
 
 const Tag = styled.span`
-  background-color: #ffa500;
-  color: #fff;
-  font-size: 12px;
-  font-weight: 500;
-  padding: 4px 8px;
-  border-radius: 8px;
+    background-color: #ffa500;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px 8px;
+    border-radius: 8px;
 `;
