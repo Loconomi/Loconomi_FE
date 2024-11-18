@@ -5,10 +5,11 @@ import RestaurantItem from './RestaurantItem';
 const RestaurantList = ({ restaurants }) => {
   return (
     <ListContainer>
-      {restaurants.map((restaurant, index) => (
+      {restaurants.map((restaurant, key) => (
         <RestaurantItem
-          key={index}
-          image={restaurant.image}
+          key={restaurant.id}
+          id={restaurant.id}
+          image={restaurant.image.main}
           name={restaurant.name}
           tags={restaurant.tags}
         />
